@@ -66,9 +66,18 @@ def gussing_game_for_5():
         print(f"猜错了，还剩{2-i}次机会")
     print("抱歉，3次都没有成功，程序主动退出了~")
 
+def str_format1():
+    name  = "world"
+    first = "Reuven"
+    last = "lerner"
+    # # <10 的意思是此字符串应向左对齐并填充至10位，使用#补齐文字位数不足的部分；#
+    final_str = f"Hello,{first:#<10} {last:#>10}"
+    print(final_str)
+
 if __name__ == "__main__":
     # guessing_name()
     # gussing_name_2()
     # gussing_name_while_3()
     # gussing_name_for_4()
-    gussing_game_for_5()
+    # gussing_game_for_5()
+    str_format1();
